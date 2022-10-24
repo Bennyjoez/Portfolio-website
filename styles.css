@@ -56,10 +56,15 @@ nav .resume {
 nav .resume button {
     padding: 10px;
     font-weight: bold;
+    text-transform: uppercase;
     background-color: transparent;
     color: var(--main-tweak-color);
     border: 2px solid var(--main-tweak-color);
     border-radius: 5px;
+}
+nav .resume button:hover {
+    box-shadow: 0 0 2px 2px;
+    cursor: pointer;
 }
 nav ul li a {
     text-decoration: none;
