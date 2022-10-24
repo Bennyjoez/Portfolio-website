@@ -71,6 +71,12 @@ nav ul li a {
     font-weight: bold;
     font-size: calc(0.8rem + 0.5vw);
 }
+nav ul li a:hover {
+    cursor: pointer;
+    font-size: calc(1rem + 1vw);
+    text-decoration: underline;
+    text-decoration-color: var(--main-tweak-color);
+}
 nav ul li a span {
     color: var(--main-tweak-color);
     margin-right: 3px;
