@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -22,8 +24,13 @@ header {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(12, 247, 161, 0.1));
     background-color: rgba(0, 0, 0, 0.3);
     align-items: center;
-
 }
+/* main {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+} */
 .logo, nav, nav ul {
     display: flex;
 }
@@ -80,6 +87,46 @@ nav ul li a:hover {
 nav ul li a span {
     color: var(--main-tweak-color);
     margin-right: 3px;
+}
+.mainContainer {
+    min-width: 400px;
+    max-width: 800px;
+    padding: 10px;
+    margin: auto;
+}
+
+.mainContainer #firstPage {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.full-bleed {
+    box-shadow: 0 0 0 100vmax rgba(216, 0, 0, 0.05);
+    clip-path: inset(0 -100vmax);
+}
+.mainContainer #firstPage .firstIntro {
+    color: var(--main-tweak-color);
+    font-size: 1.5rem;
+}
+.mainContainer #firstPage .name {
+    font-size: 5rem;
+    font-weight: 900;
+    word-wrap: none;
+    font-family: 'EB Garamond', serif;
+}
+.mainContainer #firstPage .declaration {
+    font-size: 4rem;
+    min-width: 15ch;
+    color: rgb(202, 197, 197);
+    margin-bottom: 50px;
+}
+.mainContainer #firstPage .additional {
+    font-size: 2rem;
+    min-width: 25ch;
+    color: gray;
 }
 
 
